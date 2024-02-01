@@ -12,9 +12,9 @@ const router = createBrowserRouter([
     loader: () => fetch("Details.json"),
   },
   {
-    path: "summary/:id",
+    path: "/summary/:id",
     element: <Summary></Summary>,
-    loader: () => fetch("Details.json"),
+    loader: () => fetch("/Details.json"),
     // loader: ({ params }) => fetch(JSON.parse(`Details.json/${params.id}`)),
   },
 ]);

@@ -63,7 +63,7 @@ const Cards = () => {
               {data?.show?.status}
             </h3>
             <div className="sm:flex sm:items-end sm:justify-end">
-              <Link to={`summary/${data?.show?.id}`}>
+              <Link to={`/summary/${data?.show?.id}`}>
                 <button className="block bg-yellow-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400">
                   See details
                 </button>
