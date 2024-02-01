@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import { FaStar } from "react-icons/fa";
 import { useLoaderData, useParams } from "react-router-dom";
 
 const Summary = () => {
@@ -40,8 +41,12 @@ const Summary = () => {
           <div className="max-w-[450px] lg:max-w-2xl overflow-hidden bg-gray-800 rounded-lg shadow-md">
             <div className="p-6">
               <div>
-                <span className="text-xl font-medium text-blue-600 uppercase dark:text-blue-400">
+                <span className="flex gap-5  items-center text-xl font-medium text-blue-600 uppercase dark:text-blue-400">
                   {showData.show?.name}
+                  <p className="text-yellow-500 flex items-center">
+                    {showData?.show?.rating?.average}
+                    <FaStar className="text-yellow-500 mr-1 ml-1 text-md" />
+                  </p>
                 </span>
                 {/* <a
                   href="#"

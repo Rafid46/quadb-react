@@ -13,7 +13,7 @@ const Cards = () => {
       {quadbData.map((data) => (
         <article
           key={data.show.id}
-          className="flex bg-white transition hover:shadow-xl"
+          className="flex bg-white transition hover:shadow-2xl"
         >
           <div className="rotate-180 p-2 [writing-mode:_vertical-lr]">
             <time className="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900">
