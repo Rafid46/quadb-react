@@ -36,7 +36,7 @@ const Summary = () => {
       {showData && (
         <>
           <img
-            className="rounded-lg w-[400px] mr-5 mb-10 lg:mb-10"
+            className="rounded-lg w-[300px] lg:w-[400px] mx-auto mb-10 lg:mb-10"
             src={showData.show.image?.original}
             alt=""
           />
@@ -44,7 +44,7 @@ const Summary = () => {
             <p className="text-3xl mb-4 font-semibold text-[#6C22A6]">
               Book your ticket
             </p>
-            <div className="max-w-[450px] lg:max-w-2xl overflow-hidden bg-gray-800 rounded-lg shadow-md">
+            <div className="w-[350px] lg:w-[450px] overflow-hidden bg-gray-800 rounded-lg shadow-md">
               <div className="p-6">
                 <div>
                   <span className="flex gap-5  items-center text-xl font-medium text-blue-600 uppercase dark:text-blue-400">
